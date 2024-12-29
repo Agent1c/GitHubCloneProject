@@ -9,7 +9,85 @@ def company_view():
   ''')
   user_option = input('Choose your Option.')
 
-def employee_database():
+  if user_option == '1':
+     company_employees()
+  elif user_option== '2':
+     print('Company Departments')
+     compony_departments()
+  elif user_option == '3':
+      print('Company Employees')
+      company_employees()
+     
+  
+def compony_departments():
+  departments = {
+          1: 'Marketing',
+          2: 'Sales',
+          3: 'Finance',
+          4: 'Human Resources',
+          5: 'Information Technology',
+          6: 'Legal',
+          7: 'Operations',
+          8: 'Research and Development',
+          9: 'Customer Service',
+          10: 'Purchasing',
+          11: 'Administration',
+          12: 'Accounting',
+          13: 'Engineering',
+          14: 'Management',
+          15: 'Public Relations',
+          16: 'Quality Assurance',
+          17: 'Training',
+          18: 'Logistics',
+          19: 'Maintenance',
+          20: 'Security',
+          21: 'Shipping',
+          22: 'Warehouse',
+          23: 'Production',
+          24: 'Facilities',
+          25: 'Inventory',
+          26: 'Supply Chain',
+          27: 'Health and Safety',
+          28: 'Procurement',
+          29: 'Quality Control',
+          30: 'Distribution',
+          31: 'Customer Support',
+          32: 'Technical Support',
+          33: 'Data Entry',
+          34: 'Recruiting',
+          35: 'Training',
+          36: 'Consulting',
+          37: 'Catering',
+          38: 'Hospitality',
+          39: 'Travel',
+          40: 'Real Estate',
+          41: 'Insurance',
+          42: 'Banking',
+          43: 'Investment',
+          44: 'Mortgage',
+          45: 'Credit',
+          46: 'Loans',
+          47: 'Taxes',
+          48: 'Audit',
+          49: 'Compliance',
+          50: 'Risk Management',
+          51: 'Regulatory Affairs',
+          52: 'Legal Affairs',
+          53: 'Contracts',
+          54: 'Intellectual Property',
+          55: 'Patents',
+          56: 'Trademarks',
+          57: 'Copyrights',
+          58: 'Litigation',
+          59: 'Arbitration',
+          60: 'Mediation',
+          61: 'Negotiation',
+          62: 'Settlement',
+          63: 'Claims',
+          64: 'Disputes',
+  }
+
+def company_employees():
    names = {
           1: 'Aarya Clark',
           2: 'John Garner',
@@ -30,6 +108,7 @@ def employee_database():
           17: 'Zelda Nguyen',
           18: 'Gabriel Meza',
         }
+        
    for name in names:
       print(names[name])
  
